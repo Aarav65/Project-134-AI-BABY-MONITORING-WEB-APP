@@ -1,8 +1,7 @@
+
 <html>
 <head>
-
-	<title>Baby Monitoring Web App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -10,23 +9,37 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
 
   <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
-  
   <link rel="stylesheet" type="text/css" href="style.css">
+    <title>AI Object Finder</title>
 </head>
+<body background="abstrack.jpg">
 
-<body background="background.jpg">
-  <center>
-    <h1 class="btn btn-info heading">Baby Monitoring Web App</h1>
-    <br>
-    <br>
-    <h3 id="status" class="btn btn-danger"></h3>
-    <br>
-    <br>
-    <h3 id="number_of_object" class="btn btn-warning"></h3>
-
-  </center>
-
-  <script src="main.js"></script>
-
+    <center>
+        <h1 class="btn heading">AI Object Finder</h1>
+        <br>
+        <br>
+        <label style="color: blue; font-size: 26px;" id="object_name_label">Object Name</label>
+        <br>
+        <input style="width: 500px; height: 35px; font-size: 20px; text-align: left;" class="btn" id="object_name_input" placeholder="Please write the Object Name which You want to find" type="text">
+        <br>
+        <br>
+        <br>
+        <button style="width: 90px; font-size: 18px; color: brown; background-color: cornsilk;" onclick="start();" class="btn" id="start">Start</button>
+        <br>
+        <br>
+        <h3 id="number_of_objects" class="btn btn-warning"></h3>
+        <br>
+        <br>
+          <h3 id="status" class="btn btn-danger"></h3>
+        </center>
+        
+        <div class="copy_right_footer">
+          Developed by - Aarav Awasthi
+        </div>
+        
+        <script src="main.js"></script>
+    
 </body>
 </html>
+
+

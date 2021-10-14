@@ -1,23 +1,39 @@
 body
 {
     background-size: cover;
-    background-position: center;
-}
-.heading
-{
-font-size: 23px;
-width: 100%;
-margin: 0px;
 }
 
-#status, #number_of_object
+#status, #number_of_objects, #status
 {
-font-size: 18px;
+    font-size: 18px;
+}
+
+.copy_right_footer
+{
+    position: fixed;
+    font-size: larger;
+    bottom: 0;
+    line-height: 2;
+    color: brown;
+    background-color: cornflowerblue;
+    width: 100%;
+    text-align: center;
+}
+
+.heading
+{
+    width: 100%;
+    margin: 0px;
+    font-size: 30px;
+    background-color: greenyellow;
+    color: maroon;
 }
 
 canvas
 {
-    box-shadow: 20px 20px 40px blue;
+    border: 2px solid white;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 130px;
+    box-shadow: 5px 5px 5px white;
 }
+
